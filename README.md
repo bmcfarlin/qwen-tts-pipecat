@@ -39,6 +39,12 @@ Built with `push_text_frames=True`, the framework automatically pushes `TTSTextF
 
 All models use character-based billing with predictable per-character pricing.
 
+## 🎬 Demo
+
+<p align="center">
+  <video src="https://cdn.cire.me/med/cire-demo.mp4" controls width="640" poster="https://cdn.cire.me/med/cire-demo-thumbnail.jpg"></video>
+</p>
+
 ## ⚡ Quickstart
 
 ### Installation

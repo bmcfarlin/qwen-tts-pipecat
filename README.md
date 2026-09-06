@@ -15,7 +15,6 @@
 | :--- | :--- |
 | **Sub-second latency** | First audio packet after a single character input — as low as 97ms end-to-end |
 | **Streaming generation** | Real-time audio delta events over persistent WebSocket connection |
-| **Character-based pricing** | $0.115 per 10,000 characters — predictable cost per word streamed |
 | **No GPU needed** | Cloud-hosted inference via Alibaba Cloud DashScope API |
 | **Framework-aligned** | Built as a native `WebsocketTTSService` subclass — Pipecat handles text-to-context automatically |
 
@@ -30,15 +29,15 @@ LLM Response → TTSTextFrame → QwenTtsService → WebSocket → DashScope API
 
 Built with `push_text_frames=True`, the framework automatically pushes `TTSTextFrame` downstream so the LLM conversation context receives the assistant's spoken output. No manual frame plumbing required.
 
-## 📦 Models
+## 📦 Models & Pricing
 
-| Model | ID | Use Case |
-| :--- | :--- | :--- |
-| **Instruct Flash** | `qwen3-tts-instruct-flash-realtime` | Natural language voice control + streaming (recommended default) |
-| **Flash** | `qwen3-tts-flash-realtime` | Standard streaming TTS |
-| **Realtime** | `qwen3-tts-realtime` | Base realtime model |
+| Model | ID | Use Case | Price (per 10,000 chars) |
+| :--- | :--- | :--- | :--- |
+| **TTS Flash** | `qwen-tts-flash` | Standard streaming TTS | $0.100 |
+| **Instruct Flash** | `qwen3-tts-instruct-flash-realtime` | Natural language voice control + streaming (recommended default) | $0.115 |
+| **Flash Realtime** | `qwen3-tts-flash-realtime` | High-performance streaming TTS | $0.130 |
 
-Pricing: **$0.115 per 10,000 characters** (character-based billing).
+All models use character-based billing with predictable per-character pricing.
 
 ## ⚡ Quickstart
 
@@ -124,6 +123,6 @@ Apache 2.0 — see `LICENSE` for details.
 
 ## 🔗 Links
 
-- **DashScope API docs**: [Mainland China](https://help.aliyun.com/zh/model-studio/qwen-tts-realtime) · [International](https://www.alibabacloud.com/help/en/model-studio/qwen-tts-realtime)
+- **DashScope API docs**: [International](https://www.alibabacloud.com/help/en/model-studio/qwen-tts-realtime) · [Mainland China](https://help.aliyun.com/zh/model-studio/qwen-tts-realtime)
 - **Pipecat docs**: https://docs.pipecat.ai
 - **Pipecat Discord**: https://discord.gg/pipecat

@@ -41,7 +41,7 @@ All models use character-based billing with predictable per-character pricing.
 
 ## 🎬 Demo
 
-[![Cire Demo](demo-thumbnail.png)](https://cdn.cire.me/med/cire-demo.mp4)
+<a href="https://cdn.cire.me/med/cire-demo.mp4" target="_blank"><img src="demo-thumbnail.png" alt="Cire Demo"></a>
 
 ## ⚡ Quickstart
 

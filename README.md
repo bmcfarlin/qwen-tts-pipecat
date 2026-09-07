@@ -39,6 +39,25 @@ Built with `push_text_frames=True`, the framework automatically pushes `TTSTextF
 
 All models use character-based billing with predictable per-character pricing.
 
+## 🌐 Multi-Language Voice Support
+
+Qwen TTS supports **10 international languages** with over 30 distinct voices — each voice can speak in any of these languages:
+
+| Language | Code | Example Voices |
+| :--- | :--- | :--- |
+| **English** | `en` | Ethan, Bella, Neil, Vincent, Stella |
+| **Chinese (Mandarin)** | `zh-CN` | Cherry, Serena, Kikyo, Mochi |
+| **French** | `fr-FR` | Emilien, Nini, Sonrisa |
+| **German** | `de-DE` | Lenn, Pia, Elias |
+| **Russian** | `ru-RU` | Alek, Katerina, Maia |
+| **Italian** | `it-IT` | Dolce, Bellona, Nofish |
+| **Spanish** | `es-ES` | Bodega, Jennifer, Sunny |
+| **Portuguese** | `pt-BR` | Ryan, Kikyo, Sohee |
+| **Japanese** | `ja-JP` | Ono Anna, Momo, Pip |
+| **Korean** | `ko-KR` | Sohee, Mia, Arthur |
+
+Each voice is configurable via the `voice` parameter when instantiating the service. Dialect-specific voices (Cantonese, Shanghainese, Beijing, Sichuan, etc.) are also available.
+
 ## 🎬 Demo
 
 <a href="https://cdn.cire.me/med/cire-demo.mp4" target="_blank"><img src="demo-thumbnail.png" alt="Cire Demo"></a>

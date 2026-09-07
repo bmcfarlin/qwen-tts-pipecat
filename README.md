@@ -84,7 +84,7 @@ export DASHSCOPE_API_KEY="sk-..."
 from cire.services.qwen.realtime.tts import QwenTTSService
 from pipecat.pipeline.pipeline import Pipeline
 
-tts = QwenTTSService(
+tts_service = QwenTTSService(
     api_key=DASHSCOPE_API_KEY,
     bot_user="Assistant",           # optional: identify calls in logs
     user_agent="cire/1.1.2",       # optional: client identifier
@@ -92,9 +92,9 @@ tts = QwenTTSService(
 )
 
 pipeline = Pipeline([
+    stt_service,
     llm_service,
-    tts,
-    stt,
+    tts_service,
 ])
 ```
 

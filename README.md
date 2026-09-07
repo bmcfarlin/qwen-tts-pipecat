@@ -35,7 +35,7 @@ Built with `push_text_frames=True`, the framework automatically pushes `TTSTextF
 | :--- | :--- | :--- | :--- |
 | **TTS Flash** | `qwen-tts-flash` | Standard streaming TTS | $0.100 |
 | **Instruct Flash** | `qwen3-tts-instruct-flash-realtime` | Natural language voice control + streaming (recommended default) | $0.115 |
-| **Flash Realtime** | `qwen3-tts-flash-realtime` | High-performance streaming TTS | $0.130 |
+| **Flash Realtime** | `qwen3-tts-flash-realtime` | gHigh-performance streaming TTS | $0.130 |
 
 All models use character-based billing with predictable per-character pricing.
 
@@ -81,10 +81,10 @@ export DASHSCOPE_API_KEY="sk-..."
 ### Usage in a Pipecat Pipeline
 
 ```python
-from cire.services.qwen.realtime.tts import QwenTtsService
+from cire.services.qwen.realtime.tts import QwenTTSService
 from pipecat.pipeline.transformer import LLMTranscriber
 
-tts = QwenTtsService(
+tts = QwenTTSService(
     api_key=DASHSCOPE_API_KEY,
     bot_user="Assistant",           # optional: identify calls in logs
     user_agent="cire/1.1.2",       # optional: client identifier
@@ -128,7 +128,7 @@ cire/
 │       └── qwen/
 │           └── realtime/
 │               ├── __init__.py
-│               └── tts.py          # QwenTtsService implementation
+│               └── tts.py          # QwenTTSService implementation
 ├── pyproject.toml
 ├── LICENSE
 └── README.md

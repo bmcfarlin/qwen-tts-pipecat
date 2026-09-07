@@ -82,7 +82,7 @@ export DASHSCOPE_API_KEY="sk-..."
 
 ```python
 from cire.services.qwen.realtime.tts import QwenTTSService
-from pipecat.pipeline.transformer import LLMTranscriber
+from pipecat.pipeline.pipeline import Pipeline
 
 tts = QwenTTSService(
     api_key=DASHSCOPE_API_KEY,
